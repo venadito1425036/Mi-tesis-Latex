@@ -1,1 +1,37 @@
+\subsection*{Estructura para resolver un juego de Stackelberg (dinámico)}
+
+\subsubsection*{Paso 1. Definir el sistema dinámico}
+
+\textbf{Estados:}
+\[
+x(t) \in \mathbb{R}^n
+\]
+
+\textbf{Dinámica:}
+\[
+\dot{x}(t) = f\big(x(t), u(t), v(t)\big), 
+\qquad x(0) = x_0
+\]
+
+\subsubsection*{Paso 2. Definir los controles y conjuntos admisibles}
+
+\[
+u(t) \in U, \qquad v(t) \in V
+\]
+
+donde \(U, V\) son conjuntos cerrados (y convexos si se desea optimalidad clásica).
+
+\subsubsection*{Paso 3. Definir los funcionales de costo}
+
+\textbf{Líder:}
+\[
+J_L(u,v) = \int_0^T L_L\big(x(t),u(t),v(t)\big)\,dt
++ \Phi_L\big(x(T)\big)
+\]
+
+\textbf{Seguidor:}
+\[
+J_F(u,v) = \int_0^T L_F\big(x(t),u(t),v(t)\big)\,dt
++ \Phi_F\big(x(T)\big)
+\]
 
