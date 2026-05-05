@@ -1,2 +1,0 @@
-# Mi-tesis-Latex
-TESIS
